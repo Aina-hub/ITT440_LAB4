@@ -18,7 +18,7 @@ int main(int argc,char *argv[])
 
 	server.sin_addr.s_addr = inet_addr("192.168.56.102");
 	server.sin_family =AF_INET;
-	server.sin_port = htons(8888);
+	server.sin_port = htons(22);
 
 	//connect to remot server
 	if(connect(socket_desc,(struct sockaddr*)&server,sizeof(server))<0)
